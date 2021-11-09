@@ -6,33 +6,42 @@
   --color-accent: #2196f3;
 }
 
-body {
+body,
+:visited {
   color: var(--text-color-main);
   background-color: var(--background-color-prime);
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 .logo {
   color: var(--text-color-headers);
   font-size: 26px;
+  line-height: 1.2;
   font-family: Raleway;
-  font-weight: bold;
-  text-decoration: none;
-  text-shadow: 0px 2px 4px var(--text-color-main);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  /* text-shadow: 0px 2px 4px var(--text-color-main); */
 }
+.nav-bar {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 
+  color: var(--text-color-headers);
+}
 .accent {
   color: var(--color-accent);
 }
 
-.link,
-.link :visited {
-  color: var(--text-color-headers);
-  text-decoration: none;
-}
-.link.active {
+.nav-bar.active {
   color: var(--color-accent);
 }
-.link:hover,
-.link :focus {
+.nav-bar:hover,
+.nav-bar:focus,
+.nav-bar.tel:hover,
+.nav-bar.tel:focus {
   color: var(--color-accent);
 }
 
@@ -44,4 +53,58 @@ h1,
 h2,
 h3 {
   color: var(--text-color-headers);
+  font-weight: 700;
+}
+
+.nav-bar.tel {
+  color: var(--text-color-main);
+}
+
+.hero-header {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--background-color-prime);
+  background-color: pink;
+}
+
+.button {
+  background-color: var(--color-accent);
+  color: var(--background-color-prime);
+}
+
+.section-header {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.about {
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.team h3,
+.team p {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer {
+  color: var(--background-color-prime);
+  text-transform: uppercase;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  background-color: pink;
 }
