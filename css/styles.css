@@ -74,6 +74,7 @@ h3 {
 .button {
   background-color: var(--color-accent);
   color: var(--background-color-prime);
+  font-weight: 700;
 }
 
 .section-header {
@@ -101,10 +102,37 @@ a {
   color: inherit;
 }
 
-.footer {
+.footer,
+.business p {
   color: var(--background-color-prime);
   text-transform: uppercase;
   line-height: 1.17;
   letter-spacing: 0.03em;
   background-color: pink;
+}
+
+.filter button {
+  background-color: var(--background-color-sec);
+  color: var(--text-color-headers);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.filter button:hover {
+  background-color: var(--color-accent);
+  color: var(--background-color-prime);
+}
+
+.project h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project p {
+  font-size: 18px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
 }
