@@ -1,100 +1,18 @@
 :root {
-  --background-color-prime: #ffffff;
-  --background-color-sec: #f5f4fa;
-  --text-color-main: #757575;
-  --text-color-headers: #212121;
-  --color-accent: #2196f3;
+  --text-color: #757575;
+  --header-dark-color: #212121;
+  --accent-color: #2196f3;
 }
 
-body,
-:visited {
-  color: var(--text-color-main);
-  background-color: var(--background-color-prime);
-  font-family: Roboto;
+body {
+  font-family: 'Roboto';
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-.logo {
-  color: var(--text-color-headers);
-  font-size: 26px;
-  line-height: 1.2;
-  font-family: Raleway;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  /* text-shadow: 0px 2px 4px var(--text-color-main); */
-}
-.nav-bar {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
 
-  color: var(--text-color-headers);
-}
-.accent {
-  color: var(--color-accent);
-}
-
-.nav-bar.active {
-  color: var(--color-accent);
-}
-.nav-bar:hover,
-.nav-bar:focus,
-.nav-bar.tel:hover,
-.nav-bar.tel:focus {
-  color: var(--color-accent);
-}
-
-ul {
-  list-style: none;
-}
-
-h1,
-h2,
-h3 {
-  color: var(--text-color-headers);
-  font-weight: 700;
-}
-
-.nav-bar.tel {
-  color: var(--text-color-main);
-}
-
-.hero-header {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--background-color-prime);
-  background-color: pink;
-}
-
-.button {
-  background-color: var(--color-accent);
-  color: var(--background-color-prime);
-  font-weight: 700;
-}
-
-.section-header {
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-.about {
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-.team h3,
-.team p {
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  color: var(--text-color);
+  background-color: #fff;
 }
 
 a {
@@ -102,37 +20,132 @@ a {
   color: inherit;
 }
 
-.footer,
-.business p {
-  color: var(--background-color-prime);
-  text-transform: uppercase;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  background-color: pink;
+.list {
+  list-style: none;
 }
 
-.filter button {
-  background-color: var(--background-color-sec);
-  color: var(--text-color-headers);
+/* HEADER */
+
+.logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.accent {
+  color: var(--accent-color);
+}
+
+.nav-bar {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--header-dark-color);
+}
+.tel {
+  color: var(--text-color);
+}
+
+.active,
+.nav-bar:hover,
+.nav-bar:focus {
+  color: var(--accent-color);
+}
+/* HERO */
+.hero-header {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background-color: pink; /*for contrast*/
+}
+
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+  background-color: #2196f3;
+}
+/* ABOUT */
+.section-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--header-dark-color);
+}
+
+.about .title {
+  line-height: 1.14;
+  text-transform: uppercase;
+  font-size: inherit;
+  color: var(--header-dark-color);
+}
+
+.about .text,
+.text {
+  line-height: 1.71;
+}
+
+.business p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background-color: pink; /*for contrast */
+}
+
+.team .name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
 }
 
-.filter button:hover {
-  background-color: var(--color-accent);
-  color: var(--background-color-prime);
+.team .position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+address {
+  font-style: inherit;
 }
 
-.project h2 {
+.footer-appeal {
   font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
-.project p {
-  font-size: 18px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: pink;
+}
+address ul::first-line {
+  color: #fff;
+  background-color: pink;
 }
