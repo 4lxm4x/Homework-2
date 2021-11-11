@@ -115,6 +115,10 @@ a {
   background-color: pink; /*for contrast */
 }
 
+.team {
+  background-color: #f5f4fa;
+}
+
 .team .name {
   font-weight: 500;
   font-size: 16px;
@@ -148,4 +152,38 @@ address {
 address ul::first-line {
   color: #fff;
   background-color: pink;
+}
+
+.filter .button {
+  background-color: #f5f4fa;
+  color: var(--header-dark-color);
+}
+
+.filter .button:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+.project .type {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+
+.project .desc {
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+
+.project h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+
+  color: var(--header-dark-color);
 }
