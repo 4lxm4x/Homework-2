@@ -13,29 +13,33 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/normalize.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">    
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="./index.html" class="logo"><span class="logo accent">Web</span> Studio</a>
-            <ul class="list">
-                <li><a class="nav-bar" href="./index.html">Студия</a></li>
-                <li><a class="nav-bar active" href="./portfolio.html">Портфолио</a></li>
-                <li><a class="nav-bar" href="">Контакты </a></li>
-            </ul>
-        </nav>
-        <a class="nav-bar" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a class="nav-bar tel" href="tel:+380961111111">+38 096 111 11 11</a>
+        <div class="header">
+            <nav class="main-nav">
+                <a class="logo" href="./index.html"><span class="logo accent">Web</span> Studio</a>
+                <ul class="nav list">
+                    <li><a class="nav-bar active" href="">Студия</a></li>
+                    <li><a class="nav-bar" href="./portfolio.html">Портфолио</a></li>
+                    <li><a class="nav-bar" href="">Контакты </a></li>
+                </ul>
+            </nav>
+            <div class="contact">
+                <a class="nav-bar" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="nav-bar tel" href="tel:+380961111111">+38 096 111 11 11</a>
+            </div>
+        </div>
     </header>
 <main>
     <!-- Projects gallery -->
     <section>
         <h1 class="section-header">Галерея проектов</h1>
         <ul class="filter list">
-            <li><button class="button" type="button">Все</button></li>
+            <li><button class="button active" type="button">Все</button></li>
             <li><button class="button" type="button">Веб-сайты</button></li>
             <li><button class="button" type="button">Приложения</button></li>
             <li><button class="button" type="button">Дизайн</button></li>

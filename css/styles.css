@@ -4,6 +4,16 @@
   --accent-color: #2196f3;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: 'Roboto';
   font-weight: 400;
@@ -13,6 +23,7 @@ body {
 
   color: var(--text-color);
   background-color: #fff;
+  margin: 0;
 }
 
 a {
@@ -25,6 +36,15 @@ a {
 }
 
 /* HEADER */
+
+.nav.list {
+  display: flex;
+  margin-left: 86px;
+}
+
+.nav.list li:not(:last-child) {
+  margin-right: 50px;
+}
 
 .logo {
   font-family: Raleway;
@@ -41,13 +61,38 @@ a {
   color: var(--accent-color);
 }
 
+.header {
+  display: flex;
+  width: 1200px;
+  padding: 0px 15px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 .nav-bar {
+  display: block;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--header-dark-color);
+  padding-top: 31px;
+  padding-bottom: 31px;
 }
+
+.contact {
+  display: flex;
+
+  margin-left: auto;
+}
+
 .tel {
+  margin-left: 50px;
   color: var(--text-color);
 }
 
@@ -57,7 +102,16 @@ a {
   color: var(--accent-color);
 }
 /* HERO */
+
+.hero {
+  margin-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .hero-header {
+  margin: 0 0 30px 0;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -70,6 +124,12 @@ a {
 }
 
 .button {
+  border: none;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -82,7 +142,41 @@ a {
   background-color: #2196f3;
 }
 /* ABOUT */
+.about {
+  width: 1200px;
+  padding: 0px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 94px;
+  background-color: #ccc;
+}
+.list {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.about .list > li {
+  display: inline-block;
+}
+.about-img {
+  display: inline-block;
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+
+  background-color: #f5f4fa;
+}
+.about-items {
+  width: 270px;
+  /* outline: 1px solid tomato; */
+}
+.about-items:not(:last-child) {
+  margin-right: 30px;
+}
 .section-header {
+  margin: 0;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -92,6 +186,9 @@ a {
 }
 
 .about .title {
+  margin-bottom: 10px;
+  margin-top: 0;
+
   line-height: 1.14;
   text-transform: uppercase;
   font-size: inherit;
@@ -100,7 +197,12 @@ a {
 
 .about .text,
 .text {
+  width: 270px;
   line-height: 1.71;
+}
+/* BUSINESS */
+.business {
+  margin-bottom: 94px;
 }
 
 .business p {
@@ -114,6 +216,12 @@ a {
   color: #ffffff;
   background-color: pink; /*for contrast */
 }
+.business .section-header {
+  margin-bottom: 50px;
+}
+
+.
+/* TEAM */
 
 .team {
   background-color: #f5f4fa;
@@ -159,6 +267,11 @@ address ul::first-line {
   color: var(--header-dark-color);
 }
 
+.filter .button.active {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
 .filter .button:hover {
   background-color: var(--accent-color);
   color: #fff;
@@ -186,4 +299,21 @@ address ul::first-line {
   letter-spacing: 0.06em;
 
   color: var(--header-dark-color);
+}
+
+/* .parent {
+  width: 400px;
+  background-color: tomato;
+  display: inline-block;
+}
+.block {
+  background-color: green;
+  height: 200px;
+  width: 200px;
+  margin: auto;
+} */
+
+.filter.list {
+  display: flex;
+  justify-content: center;
 }
