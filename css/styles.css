@@ -123,7 +123,8 @@ a {
   background-color: pink; /*for contrast*/
 }
 
-.button {
+.hero .button,
+footer .button {
   border: none;
   border-radius: 4px;
   width: 200px;
@@ -135,7 +136,8 @@ a {
   line-height: 1.88;
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
+  /* text-align: center; */
   letter-spacing: 0.06em;
 
   color: #ffffff;
@@ -148,16 +150,17 @@ a {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 94px;
-  background-color: #ccc;
+  /* background-color: #ccc; */
 }
 .list {
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
 }
-.about .list > li {
-  display: inline-block;
+.about .list {
+  display: flex;
 }
+
 .about-img {
   display: inline-block;
   width: 270px;
@@ -203,6 +206,31 @@ a {
 /* BUSINESS */
 .business {
   margin-bottom: 94px;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.business .list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.business .list > li {
+  outline: 1px solid red;
+  width: ((100%-2 * 30)/3);
+  /* margin-bottom: 0; */
+}
+
+.business .list > li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.business .list > li:not(:nth-last-child(3n)) {
+  margin-bottom 30px;
 }
 
 .business p {
@@ -262,9 +290,36 @@ address ul::first-line {
   background-color: pink;
 }
 
+/* PORTFOLIO */
+
+.gallery-section .section-header {
+  display: none;
+}
+
+.filter.list {
+  margin-top: 93px;
+  margin-bottom: 34px;
+}
+
 .filter .button {
+  border: none;
+  border-radius: 4px;
+  margin: 0 auto;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  letter-spacing: 0.06em;
+
   background-color: #f5f4fa;
   color: var(--header-dark-color);
+  padding: 6px 22px;
+  /* margin-right: 8px; */
+}
+
+.filter .filter-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .filter .button.active {
@@ -277,6 +332,32 @@ address ul::first-line {
   color: #fff;
 }
 
+.gallery {
+  text-align: center;
+  width: 1200px;
+  padding: 15px;
+}
+
+.project {
+  width: calc((100% - 2 * 30px) / 3);
+  outline: 1px solid red;
+}
+
+.project:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.project:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+.gallery.list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .project .type {
   font-size: 16px;
   line-height: 1.88;
@@ -287,6 +368,7 @@ address ul::first-line {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
+  display: none;
 
   color: #ffffff;
 }
